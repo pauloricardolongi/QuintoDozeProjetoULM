@@ -2,7 +2,7 @@ package entidades;
 
 import java.util.Objects;
 
-public class Produto {
+public class Produto implements Comparable<Produto>{
 	private String name;
 	private Double price;
 	
@@ -36,6 +36,15 @@ public class Produto {
 			return false;
 		Produto other = (Produto) obj;
 		return Objects.equals(name, other.name) && Objects.equals(price, other.price);
+	}
+	@Override
+	public String toString() {
+		return "Produto [name=" + name + ", price=" + price + "]";
+	}
+	@Override
+	public int compareTo(Produto other) {
+		
+		return name.toUpperCase().compareTo(other.getName().toUpperCase());
 	}
 	
 
