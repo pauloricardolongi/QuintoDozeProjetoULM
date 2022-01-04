@@ -8,7 +8,7 @@ import entidades.Produto;
 public class Programa {
 
 	public static void main(String[] args) {
-		//como Set testa igualdade comparação de ponteiros
+		//comparar um produto por conteúdo colocando hascolde equos classe produto
 		
 		Set<Produto> set = new HashSet<>();
 		
